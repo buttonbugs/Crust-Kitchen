@@ -1,4 +1,4 @@
-# Teensy-Independent
+# Crust Kitchen
 
 This repo is composed of the performance testing codes for the melty brain robot [Stuffed Crust](https://github.com/buttonbugs/Stuffed-Crust).
 
