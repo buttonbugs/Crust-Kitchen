@@ -12,6 +12,7 @@ int color_index = 0;
 CRGB color[] = {CRGB::White, CRGB::Red, CRGB::Green, CRGB::Blue};
 
 void setup() {
+    pinMode(10, OUTPUT);
     Serial.begin(9600);
     FastLED.addLeds<SK9822, LED_STRIP_DATA, LED_STRIP_SCK, COLOR_ORDER>(leds, NUM_LEDS);
     FastLED.setBrightness(50);  // Set initial brightness (0-255)
@@ -27,6 +28,6 @@ void loop() {
         FastLED.show();
         delay(10);
     }
-    digitalWrite(13, color_index % 2);
+    digitalWrite(10, color_index % 2);
     color_index = (color_index + 1) % 4;
 }
