@@ -27,5 +27,6 @@ void loop() {
         FastLED.show();
         delay(10);
     }
+    digitalWrite(13, color_index % 2);
     color_index = (color_index + 1) % 4;
 }
