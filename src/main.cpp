@@ -9,7 +9,7 @@ void setup() {
 void loop() {
     Serial.println("Ha");
     digitalWrite(10, HIGH);
-    delay(1000);
+    delay(500);
     digitalWrite(10, LOW);
-    delay(1000);
+    delay(500);
 }
